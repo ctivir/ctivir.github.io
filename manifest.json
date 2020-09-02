@@ -1,0 +1,16 @@
+{
+    "name": "Cecilia's Portfolio",
+    "short_name": "ctivir portfolio",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#2A3443",
+    "description": "A demo app",
+    "theme_color": "#2A3443",
+    "icons": [
+      {
+        "src": "./assets/img/girl1.jpg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
