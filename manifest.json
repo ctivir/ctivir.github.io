@@ -1,7 +1,7 @@
 {
     "name": "Cecilia's Portfolio",
-    "short_name": "ctivir portfolio",
-    "start_url": ".",
+    "short_name": "ctivir_portfolio",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#2A3443",
     "description": "A demo app",
