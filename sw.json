@@ -1,0 +1,22 @@
+const staticPortfolio = "ctivir_portfolio-site-v1"
+
+const assets = [
+  "/",
+  "/index.html",
+  "/assets/css/style.css",
+  "/assets/js/app.js",
+  "/assets/images/girl10.jpg",
+  "/assets/images/girl20.jpg",
+  "/assets/images/girl1.jpg",
+  "/assets/images/girl2.jpg",
+  "/assets/images/girl3.jpg",
+  "/assets/images/heart.png",
+]
+
+self.addEventListener("install", installEvent => {
+  installEvent.waitUntil(
+    caches.open(staticPortfolio).then(cache => {
+      cache.addAll(assets)
+    })
+  )
+})
