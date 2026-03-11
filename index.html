@@ -14,21 +14,35 @@
   <link href="https://fonts.googleapis.com/css2?
         family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;700&
         display=swap" rel="stylesheet">
+  
+  <script>
+    // Dark mode initialization
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
 </head>
 
-<body class="bg-bg text-text font-sans leading-relaxed">
+<body class="bg-bg dark:bg-gray-900 text-text dark:text-gray-100 font-sans leading-relaxed">
 
   <!-- navigation -->
   <header class="sticky top-0 bg-white/90 backdrop-blur z-50">
     <nav class="container mx-auto flex items-center justify-between py-4">
       <a href="/" class="text-2xl font-serif text-heading">Cecilia Tivir</a>
-      <ul class="flex space-x-6 text-heading">
+      <ul class="flex items-center space-x-6 text-heading">
         <li><a href="#home" class="hover:text-primary">Home</a></li>
         <li><a href="#about" class="hover:text-primary">About</a></li>
         <li><a href="#research" class="hover:text-primary">Research</a></li>
         <li><a href="#community" class="hover:text-primary">Community</a></li>
         <li><a href="#awards" class="hover:text-primary">Awards</a></li>
+        <li><a href="#blog" class="hover:text-primary">Blog</a></li>
         <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+        <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" aria-label="Toggle dark mode">
+          <span class="block dark:hidden">🌙</span>
+          <span class="hidden dark:block">☀️</span>
+        </button>
       </ul>
     </nav>
   </header>
@@ -123,6 +137,22 @@
       </div>
     </section>
 
+    <!-- blog section -->
+    <section id="blog" class="container mx-auto py-12">
+      <h2 class="text-3xl font-serif text-center text-heading">Blog & Insights</h2>
+      <div class="mt-8 max-w-2xl mx-auto">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 text-center">
+          <p class="text-lg text-text dark:text-gray-300 mb-4">
+            I share thoughts on learning analytics, Python development, and tech community building on Medium.
+          </p>
+          <a href="https://medium.com/@ctivir" target="_blank" rel="noopener noreferrer"
+             class="inline-block bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-lg font-medium transition">
+            Read my articles on Medium →
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- contact -->
     <section id="contact" class="container mx-auto py-12">
       <h2 class="text-3xl font-serif text-center text-heading">Contact</h2>
@@ -143,11 +173,29 @@
   </main>
 
   <!-- footer -->
-  <footer class="bg-white py-6 mt-12">
-    <div class="container mx-auto text-center text-sm text-gray-500">
-      &copy; 2026 Cecilia Tivir. All rights reserved.
+  <footer class="bg-white dark:bg-gray-800 py-6 mt-12">
+    <div class="container mx-auto text-center text-sm text-gray-500 dark:text-gray-400">
+      &copy; 2026 Cecilia Tivir. All rights reserved.
     </div>
   </footer>
+
+  <script>
+    // Dark mode toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    themeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const isDark = html.classList.contains('dark');
+      
+      if (isDark) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
 
 </body>
 </html>
