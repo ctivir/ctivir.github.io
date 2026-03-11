@@ -1,6 +1,7 @@
 # Contributing
 
-Thank you for your interest in contributing to this personal website repository. The site is built with static HTML, Tailwind CSS, and a small amount of JavaScript, and is deployed via GitHub Pages. Contributions are welcome, but please note the following guidelines:
+Thank you for your interest in contributing to this personal website repository. 
+The site is built with static HTML, Tailwind CSS, and a small amount of JavaScript, and is deployed via GitHub Pages. Contributions are welcome, but please note the following guidelines:
 
 1. **Design consistency**
    - Follow the existing colour palette and typography defined in `tailwind.config.js`.
@@ -24,4 +25,4 @@ Thank you for your interest in contributing to this personal website repository.
    - Describe your change clearly in the PR description.
    - Small, focused commits are appreciated.
 
-Feel free to reach out to Cecilia via the contact form or her social links for clarification before making large alterations.
+Feel free to reach out to @ctivir.
