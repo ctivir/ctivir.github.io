@@ -1,240 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cecilia Tivir | Researcher & Tech Organizer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cecilia Tivir | Researcher</title>
 
-  <!-- Tailwind (replace with your built file or CDN) -->
-  <link href="assets/css/tailwind.css" rel="stylesheet">
+    <!-- Tailwind (replace with your built file or CDN) -->
+    <link href="assets/css/tailwind.css" rel="stylesheet">
 
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
         family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;700&
         display=swap" rel="stylesheet">
-  
-  <script>
-    // Dark mode initialization
-    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  </script>
+
+    <script>
+        // Dark mode initialization
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
 
 <body class="bg-bg dark:bg-gray-900 text-text dark:text-gray-100 font-sans leading-relaxed">
 
-  <!-- navigation -->
-  <header class="sticky top-0 bg-white/90 backdrop-blur z-50">
-    <nav class="container mx-auto flex items-center justify-between py-4">
-      <a href="/" class="text-2xl font-serif text-heading">Cecilia Tivir</a>
-      <ul class="flex items-center space-x-6 text-heading">
-        <li><a href="#home" class="hover:text-primary">Home</a></li>
-        <li><a href="#about" class="hover:text-primary">About</a></li>
-        <li><a href="#research" class="hover:text-primary">Research</a></li>
-        <li><a href="#community" class="hover:text-primary">Community</a></li>
-        <li><a href="#awards" class="hover:text-primary">Awards</a></li>
-        <li><a href="#blog" class="hover:text-primary">Blog</a></li>
-        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
-        <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" aria-label="Toggle dark mode">
+    <!-- navigation -->
+    <header class="sticky top-0 bg-white/90 backdrop-blur z-50">
+        <nav class="container mx-auto flex items-center justify-between py-4">
+            <a href="/" class="text-2xl font-serif text-heading">Cecilia Tivir</a>
+            <ul class="flex items-center space-x-6 text-heading">
+                <li><a href="#home" class="hover:text-primary">Welcome</a></li>
+                <li><a href="#research" class="hover:text-primary">Research</a></li>
+                <li><a href="#community" class="hover:text-primary">Community</a></li>
+                <li><a href="#talks" class="hover:text-primary">Talks & Awards</a></li>
+                <li><a href="#blog" class="hover:text-primary">Blog</a></li>
+                <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+                <!-- <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" aria-label="Toggle dark mode">
           <span class="block dark:hidden">🌙</span>
           <span class="hidden dark:block">☀️</span>
-        </button>
-      </ul>
-    </nav>
-  </header>
+        </button> -->
+            </ul>
+        </nav>
+    </header>
 
-  <main>
+    <main>
 
-    <!-- hero -->
-    <section id="home" class="min-h-screen flex flex-col md:flex-row items-center container mx-auto px-6">
-      <div class="flex-1">
-        <h1 class="text-4xl md:text-6xl font-serif text-heading">
-          Hi, I’m Cecilia.
-        </h1>
-        <p class="mt-4 text-xl">PhD Researcher &amp; Python Enthusiast.</p>
-        <p class="mt-2">
-          Bridging technology and community development in Mozambique.
-        </p>
-      </div>
-      <div class="flex-1 mt-8 md:mt-0">
-        <img src="assets/img/cecilia.jpg" alt="Cecilia Tivir"
-             class="rounded-lg shadow-lg w-full object-cover" />
-      </div>
-    </section>
+        <!-- hero -->
+        <section id="home" class="min-h-screen flex flex-col md:flex-row items-center container mx-auto px-6">
+            <div class="flex-1">
+                <h1 class="text-4xl md:text-6xl font-serif text-heading">
+                    Hi, I’m Cecilia.
+                </h1>
+                <p class="mt-4 text-xl">PhD Researcher &amp; Python Enthusiast.</p>
+                <p class="mt-2">
+                    Bridging technology and community development in Mozambique.
+                </p>
+            </div>
+            <div class="flex-1 mt-8 md:mt-0">
+                <img src="assets/img/cecilia.jpg" alt="Cecilia Tivir"
+                    class="rounded-lg shadow-lg w-full object-cover" />
+            </div>
+        </section>
 
-    <!-- capulana divider (example SVG, keep it subtle) -->
-    <div class="my-12">
-      <svg class="w-full h-6" xmlns="http://www.w3.org/2000/svg"
-           preserveAspectRatio="none">
-        <path d="M0 0 L100 6 L200 0" fill="none" stroke="#D4A017" stroke-width="2"/>
-      </svg>
-    </div>
-
-    <!-- research -->
-    <section id="research" class="container mx-auto py-12">
-      <h2 class="text-3xl font-serif text-center text-heading">Research</h2>
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <article class="bg-white rounded-lg shadow p-6">
-          <h3 class="font-serif text-xl text-heading">
-            Learning Analytics
-          </h3>
-          <p class="mt-2">Brief description of your work…</p>
-          <a href="#"
-             class="mt-4 inline-block text-primary font-medium">
-            Learn more →
-          </a>
-        </article>
-        <!-- duplicate for MOOCs, SRL, etc. -->
-      </div>
-    </section>
-
-    <div class="my-12">
-      <!-- repeat capulana divider if desired -->
-    </div>
-
-    <!-- community -->
-    <section id="community" class="container mx-auto py-12">
-      <h2 class="text-3xl font-serif text-center text-heading">Community</h2>
-      <div class="mt-8 grid gap-8 sm:grid-cols-2">
-        <div class="relative overflow-hidden rounded-lg shadow-lg">
-          <img src="assets/img/wansatilab.jpg" alt="Wansati Lab"
-               class="w-full h-64 object-cover" />
-          <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
-            <a href="#" class="text-white font-semibold text-lg bg-primary px-4 py-2 rounded">
-              Wansati Lab →
-            </a>
-          </div>
+        <!-- capulana divider (example SVG, keep it subtle) -->
+        <div class="my-12">
+            <svg class="w-full h-6" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0 L100 6 L200 0" fill="none" stroke="#D4A017" stroke-width="2" />
+            </svg>
         </div>
-        <div class="relative overflow-hidden rounded-lg shadow-lg">
-          <img src="assets/img/djangogirls.png" alt="Django Girls"
-               class="w-full h-64 object-cover" />
-          <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
-            <a href="#" class="text-white font-semibold text-lg bg-primary px-4 py-2 rounded">
-              Django Girls →
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- awards & prizes -->
-    <section id="awards" class="container mx-auto py-12">
-      <h2 class="text-3xl font-serif text-center text-heading">Awards &amp; Recognition</h2>
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-accent">
-          <div class="flex items-center mb-4">
-            <span class="text-3xl mr-3">👩‍💼</span>
-            <h3 class="font-serif text-lg text-heading">Co-founder, Mozambican Women in Technology</h3>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Leadership & Diversity • Ongoing</p>
-          <p class="text-text dark:text-gray-300">Passionate about advancing gender inclusion and diversity in the Mozambican tech ecosystem.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-primary">
-          <div class="flex items-center mb-4">
-            <span class="text-3xl mr-3">👩‍💻</span>
-            <h3 class="font-serif text-lg text-heading">Co-organizer, Django Girls Mozambique</h3>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Community Education • 2015–Present</p>
-          <p class="text-text dark:text-gray-300">Organizing workshops and training programs in Maputo, Matola, and Xai-Xai to introduce women to Django and web development.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-accent">
-          <div class="flex items-center mb-4">
-            <span class="text-3xl mr-3">🐍</span>
-            <h3 class="font-serif text-lg text-heading">Co-organizer, PyLadies Maputo</h3>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Python Community • 2016–Present</p>
-          <p class="text-text dark:text-gray-300">Building a supportive community for women in Python development and open source contributions.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-primary">
-          <div class="flex items-center mb-4">
-            <span class="text-3xl mr-3">🎤</span>
-            <h3 class="font-serif text-lg text-heading">Conference Speaker & Mentor</h3>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">PyLadies & Community Events • Recent</p>
-          <p class="text-text dark:text-gray-300">Keynote: "Beyond Code: Dinâmicas Emocionais das Comunidades PyLadies" and "Mentorship That Works" on effective community leadership.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-accent">
-          <div class="flex items-center mb-4">
-            <span class="text-3xl mr-3">🎓</span>
-            <h3 class="font-serif text-lg text-heading">PhD Researcher, Big Data &amp; AI</h3>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Gaston Berger University • In Progress</p>
-          <p class="text-text dark:text-gray-300">Focus: Artificial Intelligence in Education, Educational Data Mining, and intelligent systems for learning.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-primary">
-          <div class="flex items-center mb-4">
-            <span class="text-3xl mr-3">🤝</span>
-            <h3 class="font-serif text-lg text-heading">Community Leader, Python Maputo</h3>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Active Member & Contributor • Ongoing</p>
-          <p class="text-text dark:text-gray-300">Fostering growth and collaboration in the Mozambique Python community through events, mentorship, and advocacy.</p>
-        </div>
-      </div>
-    </section>
+        <!-- research -->
+        <section id="research" class="container mx-auto py-12">
+            <h2 class="text-3xl font-serif text-center text-heading">Research</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-serif text-xl text-heading">
+                        Learning Analytics
+                    </h3>
+                    <p class="mt-2">This project analyzes Moodle action logs and grades to 
+                        understand student engagement and predict academic performance...</p>
+                    <a href="https://github.com/ctivir/moodle-analytics-pipeline" class="mt-4 inline-block text-primary font-medium">
+                        Learn more →
+                    </a>
+                </article>
+                <!-- duplicate for MOOCs, SRL, etc. -->
+                <article class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-serif text-xl text-heading">
+                        Maize Leaf Diseases Classification
+                    </h3>
+                    <p class="mt-2">This study leverages Machine Learning and Deep Learning (CNNs) 
+                        to automate the detection of Maize Streak Virus and Fall Armyworm in 
+                        Sub-Saharan Africa...</p>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-94442-0_8" class="mt-4 inline-block text-primary font-medium">
+                        Learn more →
+                    </a>
+                </article>
+                <article class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-serif text-xl text-heading">
+                        Moodle and Cognix Integration: Optimizing Learning Object Management
+                    </h3>
+                    <p class="mt-2">This project focuses on the technical integration between the 
+                        Moodle VLE and the Cognix Repository to streamline the storage and retrieval 
+                        of digital learning objects...</p>
+                    <a href="https://www.tise.cl/volumen13/TISE2017/02.pdf" class="mt-4 inline-block text-primary font-medium">
+                        Learn more →
+                    </a>
+                </article>
+            </div>
+        </section>
 
-    <!-- blog section -->
-    <section id="blog" class="container mx-auto py-12">
-      <h2 class="text-3xl font-serif text-center text-heading">Blog & Insights</h2>
-      <div class="mt-8 max-w-2xl mx-auto">
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 text-center">
-          <p class="text-lg text-text dark:text-gray-300 mb-4">
-            I share thoughts on learning analytics, Python development, and tech community building on Medium.
-          </p>
-          <a href="https://medium.com/@ctivir" target="_blank" rel="noopener noreferrer"
-             class="inline-block bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-lg font-medium transition">
-            Read my articles on Medium →
-          </a>
+        <div class="my-12">
+            <!-- repeat divider if desired -->
         </div>
-      </div>
-    </section>
 
-    <!-- contact -->
-    <section id="contact" class="container mx-auto py-12">
-      <h2 class="text-3xl font-serif text-center text-heading">Contact</h2>
-      <form class="mt-8 max-w-lg mx-auto space-y-4">
-        <input type="text" name="name" placeholder="Your name"
-               class="w-full border border-gray-300 rounded px-4 py-2"/>
-        <input type="email" name="email" placeholder="Your email"
-               class="w-full border border-gray-300 rounded px-4 py-2"/>
-        <textarea name="message" rows="5" placeholder="Message"
-                  class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
-        <button type="submit"
-                class="bg-primary text-white px-6 py-2 rounded font-medium">
-          Send
-        </button>
-      </form>
-    </section>
+        <!-- community -->
+        <section id="community" class="container mx-auto py-12">
+            <h2 class="text-3xl font-serif text-center text-heading">Community</h2>
+            <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="assets/img/wansatilab.jpg" alt="Wansati Lab" class="w-full h-64 object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
+                        <a href="#" class="text-white font-semibold text-lg bg-primary px-4 py-2 rounded">
+                            Wansati Lab →
+                        </a>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="assets/img/djangogirls.png" alt="Django Girls" class="w-full h-64 object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
+                        <a href="#" class="text-white font-semibold text-lg bg-primary px-4 py-2 rounded">
+                            Django Girls →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  </main>
+        <!-- awards & prizes -->
+        <section id="awards" class="container mx-auto py-12">
+            <h2 class="text-3xl font-serif text-center text-heading">Awards &amp; Recognition</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-accent">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">👩‍💼</span>
+                        <h3 class="font-serif text-lg text-heading">Co-founder, Mozambican Women in Technology</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Leadership &amp; Diversity • Ongoing</p>
+                    <p class="text-text dark:text-gray-300">Passionate about advancing gender inclusion and diversity in
+                        the Mozambican tech ecosystem.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-primary">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">👩‍💻</span>
+                        <h3 class="font-serif text-lg text-heading">Co-organizer, Django Girls Mozambique</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Community Education • 2015–Present</p>
+                    <p class="text-text dark:text-gray-300">Organizing workshops and training programs in Maputo,
+                        Matola, and Xai-Xai to introduce women to Django and web development.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-accent">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">🐍</span>
+                        <h3 class="font-serif text-lg text-heading">Co-organizer, PyLadies Maputo</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Python Community • 2016–Present</p>
+                    <p class="text-text dark:text-gray-300">Building a supportive community for women in Python
+                        development and open source contributions.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-primary">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">🎤</span>
+                        <h3 class="font-serif text-lg text-heading">Conference Speaker &amp; Mentor</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">PyLadies &amp;Community Events • Recent</p>
+                    <p class="text-text dark:text-gray-300">Talk: "Beyond Code: Dinâmicas Emocionais das Comunidades
+                        PyLadies" and "Mentorship That Works" on effective community leadership.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-accent">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">🎓</span>
+                        <h3 class="font-serif text-lg text-heading">PhD Researcher, Big Data &amp; AI</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Gaston Berger University • In Progress</p>
+                    <p class="text-text dark:text-gray-300">Focus: Artificial Intelligence in Education, Educational
+                        Data Mining, and intelligent systems for learning.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-primary">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">🤝</span>
+                        <h3 class="font-serif text-lg text-heading">Community Leader, Python Maputo</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Active Member &amp; Contributor • Ongoing</p>
+                    <p class="text-text dark:text-gray-300">Fostering growth and collaboration in the Mozambique Python
+                        community through events, mentorship, and advocacy.</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- footer -->
-  <footer class="bg-white dark:bg-gray-800 py-6 mt-12">
-    <div class="container mx-auto text-center text-sm text-gray-500 dark:text-gray-400">
-      &copy; 2026 Cecilia Tivir. All rights reserved.
-    </div>
-  </footer>
+        <!-- blog section -->
+        <section id="blog" class="container mx-auto py-12">
+            <h2 class="text-3xl font-serif text-center text-heading">Blog</h2>
+            <div class="mt-8 max-w-2xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 text-center">
+                    <p class="text-lg text-text dark:text-gray-300 mb-4">
+                        I share thoughts on learning analytics, Python development, and tech community building on
+                        Medium.
+                    </p>
+                    <a href="https://medium.com/@ceciliativir" target="_blank" rel="noopener noreferrer"
+                        class="inline-block bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-lg font-medium transition">
+                        Read my articles on Medium →
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <script>
-    // Dark mode toggle functionality
-    const themeToggle = document.getElementById('theme-toggle');
-    
-    themeToggle.addEventListener('click', () => {
-      const html = document.documentElement;
-      const isDark = html.classList.contains('dark');
-      
-      if (isDark) {
-        html.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      } else {
-        html.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      }
-    });
-  </script>
+        <!-- contact -->
+        <section id="contact" class="container mx-auto py-12">
+            <h2 class="text-3xl font-serif text-center text-heading">Contact</h2>
+            <form class="mt-8 max-w-lg mx-auto space-y-4">
+                <input type="text" name="name" placeholder="Your name"
+                    class="w-full border border-gray-300 rounded px-4 py-2" />
+                <input type="email" name="email" placeholder="Your email"
+                    class="w-full border border-gray-300 rounded px-4 py-2" />
+                <textarea name="message" rows="5" placeholder="Message"
+                    class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+                <button type="submit" class="bg-primary text-white px-6 py-2 rounded font-medium">
+                    Send
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-white dark:bg-gray-800 py-6 mt-12">
+        <div class="container mx-auto text-center text-sm text-gray-500 dark:text-gray-400">
+            &copy; 2026 Cecilia Tivir. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+
+        themeToggle.addEventListener('click', () => {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+
+            if (isDark) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 
 </body>
+
 </html>
